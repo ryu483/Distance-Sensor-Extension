@@ -5,4 +5,9 @@ namespace distanceSensor {
     export function isObstacle(): boolean {
         return pins.analogReadPin(AnalogReadWritePin.P2) >= 500;
     }
+
+    //% block="しょうがいぶつとの距離"
+    export function getDistance(): number {
+        return pins.analogReadPin(AnalogReadWritePin.P2);
+    }
 }
